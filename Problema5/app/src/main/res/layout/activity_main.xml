@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Ingrese el primer valor:" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv1"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/et1"
+        android:text="Ingrese el segundo valor:" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv2"
+        android:ems="10" />
+
+    <Button
+    android:id="@+id/button1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/et2"
+    android:onClick="sumar"
+    android:text="Sumar" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="restar"
+        android:text="Restar"
+        android:layout_above="@+id/tv3"
+        android:layout_toLeftOf="@+id/button3"
+        android:layout_toStartOf="@+id/button3" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="multiplicar"
+        android:text="Multiplicar"
+        android:layout_above="@+id/tv3"
+        android:layout_toLeftOf="@+id/button4"
+        android:layout_toStartOf="@+id/button4" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="dividir"
+        android:text="Dividir"
+        android:layout_alignTop="@+id/button3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1"
+        android:text="Resultado" />
+
+
+    <TextView
+        android:id="@+id/tv12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et12"
+        android:layout_alignRight="@+id/button1"
+        android:layout_alignEnd="@+id/button1" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ejecutar"
+        android:text="Guardar Resultado"
+        android:layout_above="@+id/et12"
+        android:layout_toStartOf="@+id/button2"
+        android:layout_alignRight="@+id/tv1"
+        android:layout_alignEnd="@+id/tv1" />
+
+    <EditText
+        android:id="@+id/et12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <requestFocus />
+    </EditText>
+
+
+</RelativeLayout>
